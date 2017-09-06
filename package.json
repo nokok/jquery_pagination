@@ -1,0 +1,26 @@
+{
+  "name": "jquery_pagination",
+  "version": "1.0.1",
+  "description": "jquery pagination library",
+  "main": "index.js",
+  "directories": {
+    "test": "echo not available ;- )"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nokok/jquery_pagination.git"
+  },
+  "keywords": [
+    "jquery",
+    "pagination"
+  ],
+  "author": "nokok",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/nokok/jquery_pagination/issues"
+  },
+  "homepage": "https://github.com/nokok/jquery_pagination#readme"
+}
