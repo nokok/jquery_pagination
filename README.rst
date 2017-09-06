@@ -118,10 +118,10 @@ load_first_page
 	whey you initialize the pagination, you should set this to false.
 
 prev_class
-  Class attribute for the "Previous"-link. Can be blank to do nothing. Default: `prev`
+  Class attribute for the "Previous"-link. Can be blank to do nothing. Default: ``prev``
 
 prev_class
-  Class attribute for the "Next"-link. Can be blank to do nothing. Default: `next`
+  Class attribute for the "Next"-link. Can be blank to do nothing. Default: ``next``
 
 Triggering pagination with custom events
 ----------------------------------------
