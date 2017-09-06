@@ -89,11 +89,11 @@
 			var begin, end,
 				interval = this.pc.getInterval(current_page),
 				np = this.pc.numPages(),
-				fragment = $("<div class='pagination'></div>");
+				fragment = $(this.opts.fragment);
 			
 			// Generate "Previous"-Link
 			if(this.opts.prev_text && (current_page > 0 || this.opts.prev_show_always)){
-				fragment.append(this.createLink(current_page-1, current_page, {text:this.opts.prev_text, classes:"prev",rel:"prev"}));
+				fragment.append(this.createLink(current_page-1, current_page, {text:this.opts.prev_text, classes:this.opts.prev_class, rel:"prev"}));
 			}
 			// Generate starting points
 			if (interval.start > 0 && this.opts.num_edge_entries > 0)
@@ -120,7 +120,7 @@
 			}
 			// Generate "Next"-Link
 			if(this.opts.next_text && (current_page < np-1 || this.opts.next_show_always)){
-				fragment.append(this.createLink(current_page+1, current_page, {text:this.opts.next_text, classes:"next",rel:"next"}));
+				fragment.append(this.createLink(current_page+1, current_page, {text:this.opts.next_text, classes:this.opts.next_class,rel:"next"}));
 			}
 			$('span', fragment).click(eventHandler);
 			return fragment;
@@ -140,6 +140,9 @@
 			prev_text:"",
 			next_text:"",
 			ellipse_text:"...",
+			prev_class:"prev",
+			next_class:"next",
+			fragment:"<div></div>",
 			prev_show_always:true,
 			next_show_always:true,
 			renderer:"defaultRenderer",
