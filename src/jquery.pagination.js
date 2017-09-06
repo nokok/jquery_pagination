@@ -70,7 +70,7 @@
 			}
 			else
 			{
-				lnk = $("<a>" + appendopts.text + "</a>")
+				lnk = $("<span>" + appendopts.text + "</span>")
 					.attr('href', this.opts.link_to.replace(/__id__/,page_id));
 			}
 			if(appendopts.classes){ lnk.addClass(appendopts.classes); }
@@ -122,7 +122,7 @@
 			if(this.opts.next_text && (current_page < np-1 || this.opts.next_show_always)){
 				fragment.append(this.createLink(current_page+1, current_page, {text:this.opts.next_text, classes:"next",rel:"next"}));
 			}
-			$('a', fragment).click(eventHandler);
+			$('span', fragment).click(eventHandler);
 			return fragment;
 		}
 	});
