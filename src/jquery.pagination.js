@@ -156,9 +156,14 @@
 		 * @param {int} page_id The new page number
 		 */
 		function paginationClickHandler(evt){
-			var links, 
-				new_current_page = $(evt.target).data('page_id'),
-				continuePropagation = selectPage(new_current_page);
+			var links;
+			var new_current_page = $(evt.target).data('page_id');
+			
+			if(typeof(new_current_page) == 'undefined') {
+				new_current_page = $(evt.target).closest('span').data('page_id');
+			}
+			
+			var continuePropagation = selectPage(new_current_page);
 			if (!continuePropagation) {
 				evt.stopPropagation();
 			}
