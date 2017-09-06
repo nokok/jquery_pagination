@@ -66,7 +66,7 @@
 			page_id = page_id<0?0:(page_id<np?page_id:np-1); // Normalize page id to sane value
 			appendopts = $.extend({text:page_id+1, classes:""}, appendopts||{});
 			if(page_id == current_page){
-				lnk = $("<span class='current'>" + appendopts.text + "</span>");
+				lnk = $("<span class='active'>" + appendopts.text + "</span>");
 			}
 			else
 			{
