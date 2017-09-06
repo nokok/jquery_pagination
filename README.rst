@@ -117,6 +117,12 @@ load_first_page
 	initialized. If you load your content with AJAX and already show content
 	whey you initialize the pagination, you should set this to false.
 
+prev_class
+  Class attribute for the "Previous"-link. Can be blank to do nothing. Default: `prev`
+
+prev_class
+  Class attribute for the "Next"-link. Can be blank to do nothing. Default: `next`
+
 Triggering pagination with custom events
 ----------------------------------------
 There may be use cases where you want to change the pagination from your own
