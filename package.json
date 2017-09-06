@@ -1,6 +1,6 @@
 {
   "name": "jquery_pagination",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "jquery pagination library",
   "main": "index.js",
   "directories": {
@@ -18,7 +18,7 @@
     "pagination"
   ],
   "author": "nokok",
-  "license": "GPLv2",
+  "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/nokok/jquery_pagination/issues"
   },
